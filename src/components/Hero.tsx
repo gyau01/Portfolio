@@ -8,38 +8,89 @@ function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative px-4 overflow-hidden">
       <svg
-        className="absolute inset-0 w-full h-full opacity-10"
+        className="absolute inset-0 w-full h-full opacity-15"
         preserveAspectRatio="none"
-        viewBox="0 0 1000 1000"
+        viewBox="0 0 1200 400"
       >
         <defs>
-          <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#64748b" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#1e293b" stopOpacity="0.1" />
-          </linearGradient>
-          <pattern id="circuitPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-            <circle cx="0" cy="0" r="4" fill="#94a3b8" opacity="0.4" />
-            <circle cx="200" cy="0" r="4" fill="#94a3b8" opacity="0.4" />
-            <circle cx="0" cy="200" r="4" fill="#94a3b8" opacity="0.4" />
-            <circle cx="200" cy="200" r="4" fill="#94a3b8" opacity="0.4" />
-            <path d="M 0 0 L 100 0 L 100 100 L 200 100" stroke="#64748b" strokeWidth="1.5" fill="none" opacity="0.3" />
-            <path d="M 200 0 L 150 0 L 150 150 L 0 150" stroke="#64748b" strokeWidth="1.5" fill="none" opacity="0.3" />
-            <path d="M 0 200 L 100 200 L 100 100 L 200 100" stroke="#64748b" strokeWidth="1.5" fill="none" opacity="0.3" />
+          <pattern id="pcbPattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+            <circle cx="10" cy="10" r="3" fill="#64748b" opacity="0.5" />
+            <circle cx="120" cy="10" r="3" fill="#64748b" opacity="0.5" />
+            <circle cx="10" cy="120" r="3" fill="#64748b" opacity="0.5" />
+            <circle cx="120" cy="120" r="3" fill="#64748b" opacity="0.5" />
           </pattern>
         </defs>
-        <rect width="1000" height="1000" fill="url(#circuitPattern)" />
-        <g opacity="0.2">
-          <path d="M 50 100 L 150 100 L 150 200 L 300 200" stroke="#94a3b8" strokeWidth="2" fill="none" />
-          <path d="M 600 50 L 650 50 L 650 150 L 750 150" stroke="#94a3b8" strokeWidth="2" fill="none" />
-          <path d="M 100 500 L 200 500 L 200 600 L 350 600" stroke="#94a3b8" strokeWidth="2" fill="none" />
-          <path d="M 700 400 L 800 400 L 800 550 L 900 550" stroke="#94a3b8" strokeWidth="2" fill="none" />
-          <path d="M 200 750 L 300 750 L 300 850 L 450 850" stroke="#94a3b8" strokeWidth="2" fill="none" />
-          <circle cx="150" cy="100" r="5" fill="#94a3b8" opacity="0.6" />
-          <circle cx="150" cy="200" r="5" fill="#94a3b8" opacity="0.6" />
-          <circle cx="650" cy="50" r="5" fill="#94a3b8" opacity="0.6" />
-          <circle cx="650" cy="150" r="5" fill="#94a3b8" opacity="0.6" />
-          <circle cx="200" cy="500" r="5" fill="#94a3b8" opacity="0.6" />
-          <circle cx="200" cy="600" r="5" fill="#94a3b8" opacity="0.6" />
+        <rect width="1200" height="400" fill="url(#pcbPattern)" />
+        <g stroke="#64748b" strokeWidth="2" fill="none" opacity="0.4">
+          <path d="M 0 60 L 80 60 L 80 120 L 140 120 L 140 200 L 200 200" />
+          <path d="M 200 200 L 200 80 L 260 80 L 260 160" />
+          <path d="M 260 160 L 320 160 L 320 240 L 380 240" />
+          <path d="M 380 240 L 380 100 L 440 100 L 440 180 L 500 180" />
+          <path d="M 500 180 L 500 280 L 560 280 L 560 140 L 620 140" />
+          <path d="M 620 140 L 620 260 L 680 260 L 680 120" />
+          <path d="M 680 120 L 740 120 L 740 200 L 800 200 L 800 80" />
+          <path d="M 800 80 L 860 80 L 860 240 L 920 240 L 920 160" />
+          <path d="M 920 160 L 980 160 L 980 280 L 1040 280 L 1040 100" />
+          <path d="M 1040 100 L 1100 100 L 1100 220 L 1200 220" />
+          <path d="M 0 320 L 60 320 L 60 180 L 120 180 L 120 340" />
+          <path d="M 120 340 L 180 340 L 180 200 L 240 200 L 240 360" />
+        </g>
+        <g fill="#64748b" opacity="0.5">
+          <circle cx="80" cy="60" r="3.5" />
+          <circle cx="80" cy="120" r="3.5" />
+          <circle cx="140" cy="120" r="3.5" />
+          <circle cx="140" cy="200" r="3.5" />
+          <circle cx="200" cy="200" r="3.5" />
+          <circle cx="200" cy="80" r="3.5" />
+          <circle cx="260" cy="80" r="3.5" />
+          <circle cx="260" cy="160" r="3.5" />
+          <circle cx="320" cy="160" r="3.5" />
+          <circle cx="320" cy="240" r="3.5" />
+          <circle cx="380" cy="240" r="3.5" />
+          <circle cx="380" cy="100" r="3.5" />
+          <circle cx="440" cy="100" r="3.5" />
+          <circle cx="440" cy="180" r="3.5" />
+          <circle cx="500" cy="180" r="3.5" />
+          <circle cx="500" cy="280" r="3.5" />
+          <circle cx="560" cy="280" r="3.5" />
+          <circle cx="560" cy="140" r="3.5" />
+          <circle cx="620" cy="140" r="3.5" />
+          <circle cx="620" cy="260" r="3.5" />
+          <circle cx="680" cy="260" r="3.5" />
+          <circle cx="680" cy="120" r="3.5" />
+          <circle cx="740" cy="120" r="3.5" />
+          <circle cx="740" cy="200" r="3.5" />
+          <circle cx="800" cy="200" r="3.5" />
+          <circle cx="800" cy="80" r="3.5" />
+          <circle cx="860" cy="80" r="3.5" />
+          <circle cx="860" cy="240" r="3.5" />
+          <circle cx="920" cy="240" r="3.5" />
+          <circle cx="920" cy="160" r="3.5" />
+          <circle cx="980" cy="160" r="3.5" />
+          <circle cx="980" cy="280" r="3.5" />
+          <circle cx="1040" cy="280" r="3.5" />
+          <circle cx="1040" cy="100" r="3.5" />
+          <circle cx="1100" cy="100" r="3.5" />
+          <circle cx="1100" cy="220" r="3.5" />
+          <circle cx="60" cy="320" r="3.5" />
+          <circle cx="60" cy="180" r="3.5" />
+          <circle cx="120" cy="180" r="3.5" />
+          <circle cx="120" cy="340" r="3.5" />
+          <circle cx="180" cy="340" r="3.5" />
+          <circle cx="180" cy="200" r="3.5" />
+          <circle cx="240" cy="200" r="3.5" />
+          <circle cx="240" cy="360" r="3.5" />
+        </g>
+        <g fill="#94a3b8" opacity="0.3">
+          <circle cx="50" cy="200" r="2" />
+          <circle cx="110" cy="250" r="2" />
+          <circle cx="170" cy="100" r="2" />
+          <circle cx="300" cy="300" r="2" />
+          <circle cx="450" cy="80" r="2" />
+          <circle cx="590" cy="220" r="2" />
+          <circle cx="700" cy="180" r="2" />
+          <circle cx="850" cy="320" r="2" />
+          <circle cx="1050" cy="160" r="2" />
         </g>
       </svg>
       <div className="max-w-4xl mx-auto text-center z-10">
