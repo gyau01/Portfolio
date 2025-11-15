@@ -17,7 +17,7 @@ function About() {
             </div>
             <div className="flex-1">
               <p className="text-slate-800 leading-relaxed text-lg">
-                Highly motivated Junior pursuing an Electrical Engineering degree at the University of Louisville with passion and unwavering thirst for knowledge. Actively enhancing electrical, coding, circuit design, and electronics skills to apply to real-world situations. Continuously seeking opportunities for internships and research that will expand my skill set. I thrive on challenges and am eager to discover innovative solutions to make a meaningful contribution to the industry.
+                Highly motivated Junior pursuing an Electrical Engineering degree at the University of Louisville with passion and an unwavering thirst for knowledge. Actively enhancing electrical, coding, circuit design, and electronics skills to apply to real-world situations. Continuously seeking opportunities for internships and research that will expand my skill set. I thrive on challenges and am eager to discover innovative solutions that enable me to make a meaningful contribution to the industry.
               </p>
             </div>
           </div>
