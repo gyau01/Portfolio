@@ -128,10 +128,16 @@ function Hero() {
             Systems Engineering
           </span>
           <span className="px-4 py-2 bg-slate-700 rounded-full text-sm">
-            Embedded Systems
+            Electronics
           </span>
           <span className="px-4 py-2 bg-slate-700 rounded-full text-sm">
             Robotics
+          </span>
+          <span className="px-4 py-2 bg-slate-700 rounded-full text-sm">
+           Embedded Systems  
+          </span>
+          <span className="px-4 py-2 bg-slate-700 rounded-full text-sm">
+           Network Analysis 
           </span>
         </div>
       </div>
