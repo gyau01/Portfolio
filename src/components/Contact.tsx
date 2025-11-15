@@ -46,7 +46,7 @@ function Contact() {
 
         <div className="border-t border-slate-700 pt-8">
           <p className="text-slate-400">
-            © 2024 Gau Ding Yu (Michael) Yau. All rights reserved.
+            © 2025 Michael Yau. All rights reserved.
           </p>
         </div>
       </div>
