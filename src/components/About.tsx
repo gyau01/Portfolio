@@ -1,4 +1,4 @@
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, Award, Zap } from 'lucide-react';
 
 function About() {
   return (
@@ -7,6 +7,21 @@ function About() {
         <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
           About Me
         </h2>
+
+        <div className="mb-12 group relative overflow-hidden bg-gradient-to-r from-cyan-50 to-blue-50 p-8 rounded-lg border border-slate-200 hover:border-cyan-400 transition-all duration-300 hover:shadow-lg">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500">
+                <Zap className="text-white" size={24} />
+              </div>
+            </div>
+            <div className="flex-1">
+              <p className="text-slate-800 leading-relaxed text-lg">
+                Highly motivated Junior pursuing an Electrical Engineering degree at the University of Louisville with passion and unwavering thirst for knowledge. Actively enhancing electrical, coding, circuit design, and electronics skills to apply to real-world situations. Continuously seeking opportunities for internships and research that will expand my skill set. I thrive on challenges and am eager to discover innovative solutions to make a meaningful contribution to the industry.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-slate-50 p-8 rounded-lg border border-slate-200">
