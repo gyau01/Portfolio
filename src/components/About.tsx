@@ -83,7 +83,10 @@ function About() {
               'Embedded Systems',
               'Electromagnetic',
               'Electronics',
-              'Signals'
+              'Signals',
+              'Linear Algebra',
+              'Calculus I - III',
+              'DE',
             ].map((course) => (
               <span
                 key={course}
