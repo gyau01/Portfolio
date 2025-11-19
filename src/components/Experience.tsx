@@ -16,7 +16,7 @@ function Experience() {
       role: 'Systems & Defense Engineering Co-op',
       location: 'Dayton, OH',
       period: 'September 2025 – Present',
-      logo: '/image.png',
+      logo: '/image copy.png',
       highlights: [
         'Conduct system diagnostics on commercial aircraft power generation systems via ATP, ESS, CT, & vibration tests',
         'Design circuitry and produce PCB units in Altium for the jet generator firing and blanking signal test stands',
