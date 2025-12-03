@@ -1,4 +1,4 @@
-import { Trophy, Rocket } from 'lucide-react';
+import { Trophy, Rocket, Sparkles } from 'lucide-react';
 
 interface Project {
   title: string;
@@ -37,50 +37,62 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-          Projects & Competitions
-        </h2>
+    <section id="projects" className="py-24 px-4 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE2YzAgMS4xLS45IDItMiAycy0yLS45LTItMiAuOS0yIDItMiAyIC45IDIgMm0tMTQgMGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtMTQgMTRjMCAxLjEtLjkgMi0yIDJzLTItLjktMi0yIC45LTIgMi0yIDIgLjkgMiAybS0xNCAwYzAgMS4xLS45IDItMiAycy0yLS45LTItMiAuOS0yIDItMiAyIC45IDIgMm0xNCAyOGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtLTE0IDBjMCAxLjEtLjkgMi0yIDJzLTItLjktMi0yIC45LTIgMi0yIDIgLjkgMiAybS0xNC0yOGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtMCAxNGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtMjggMGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-10" />
+
+      <div className="absolute top-40 left-20 w-64 h-64 bg-cyan-500 rounded-full blur-3xl opacity-10" />
+      <div className="absolute bottom-40 right-20 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-10" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-white mb-4 inline-flex items-center gap-3">
+            <Sparkles className="text-cyan-400" size={32} />
+            Projects & Competitions
+            <Sparkles className="text-cyan-400" size={32} />
+          </h2>
+          <div className="h-1 w-32 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden bg-white p-8 rounded-lg border border-slate-200 hover:border-slate-400 transition-all duration-300 hover:shadow-xl"
+              className="group relative overflow-hidden glass rounded-2xl border border-cyan-500/30 hover:border-cyan-500/50 transition-all duration-500 hover:glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              <div className="relative">
+              <div className="relative p-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <img
-                    src={project.logo}
-                    alt={`Logo`}
-                    className="w-14 h-14 rounded-lg object-contain bg-white p-1 border border-slate-200 flex-shrink-0"
-                  />
-                  <div className="flex items-center gap-2 text-slate-600 px-3 py-1.5 bg-slate-100 rounded-lg text-xs font-medium h-fit">
+                  <div className="w-16 h-16 rounded-xl overflow-hidden border-2 border-cyan-500/30 group-hover:border-cyan-500/50 shadow-lg shadow-cyan-500/20 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <img
+                      src={project.logo}
+                      alt="Logo"
+                      className="w-full h-full object-contain bg-white p-2"
+                    />
+                  </div>
+                  <div className="flex items-center gap-2 text-slate-300 px-4 py-2 glass-dark rounded-xl text-xs font-medium h-fit border border-cyan-500/20">
                     <span>{project.period}</span>
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-700 mb-6 font-medium text-sm">
+                <p className="text-slate-400 mb-6 font-medium text-sm">
                   {project.subtitle}
                 </p>
 
                 <ul className="space-y-3">
                   {project.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <span className="text-slate-700 mt-1.5 font-bold text-sm">•</span>
-                      <span className="text-slate-700 text-sm">{highlight}</span>
+                    <li key={idx} className="flex items-start gap-3 group/item">
+                      <span className="text-cyan-500 mt-1.5 font-bold text-sm group-hover/item:translate-x-1 transition-transform">▸</span>
+                      <span className="text-slate-300 text-sm">{highlight}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-400 via-slate-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           ))}
         </div>

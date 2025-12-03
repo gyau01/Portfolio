@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, ArrowRight } from 'lucide-react';
+import { Briefcase, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 
 interface ExperienceItem {
   company: string;
@@ -62,98 +62,107 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-gradient-to-b from-slate-50 to-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
-          Professional Experience
-        </h2>
+    <section id="experience" className="py-24 px-4 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE2YzAgMS4xLS45IDItMiAycy0yLS45LTItMiAuOS0yIDItMiAyIC45IDIgMm0tMTQgMGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtMTQgMTRjMCAxLjEtLjkgMi0yIDJzLTItLjktMi0yIC45LTIgMi0yIDIgLjkgMiAybS0xNCAwYzAgMS4xLS45IDItMiAycy0yLS45LTItMiAuOS0yIDItMiAyIC45IDIgMm0xNCAyOGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtLTE0IDBjMCAxLjEtLjkgMi0yIDJzLTItLjktMi0yIC45LTIgMi0yIDIgLjkgMiAybS0xNC0yOGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtMCAxNGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJtMjggMGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTIgLjktMiAyLTIgMiAuOSAyIDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-10" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-white mb-4 inline-flex items-center gap-3">
+            <Sparkles className="text-cyan-400" size={32} />
+            Professional Experience
+            <Sparkles className="text-cyan-400" size={32} />
+          </h2>
+          <div className="h-1 w-32 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
+        </div>
 
         <div className="space-y-6">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden bg-white rounded-lg border border-slate-200 hover:border-slate-400 transition-all duration-300 hover:shadow-xl"
+              className="group relative overflow-hidden glass rounded-2xl border border-cyan-500/30 hover:border-cyan-500/50 transition-all duration-500 hover:glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative p-8">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6 gap-4">
                   <div className="flex-1 flex gap-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={exp.logo}
-                        alt={`${exp.company} logo`}
-                        className="w-16 h-16 rounded-lg object-contain bg-white p-2 border border-slate-200"
-                      />
+                    <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-16 h-16 rounded-xl overflow-hidden border-2 border-cyan-500/30 group-hover:border-cyan-500/50 shadow-lg shadow-cyan-500/20">
+                        <img
+                          src={exp.logo}
+                          alt={`${exp.company} logo`}
+                          className="w-full h-full object-contain bg-white p-2"
+                        />
+                      </div>
                     </div>
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="w-1 h-8 bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full" />
-                        <h3 className="text-2xl font-bold text-slate-900">
+                        <div className="w-1 h-8 bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full shadow-lg shadow-cyan-500/50" />
+                        <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
                           {exp.role}
                         </h3>
                       </div>
                       <div className="ml-4">
-                        <div className="flex items-center gap-2 text-lg font-semibold text-slate-800 mb-1">
-                          <Briefcase size={18} className="text-cyan-600" />
+                        <div className="flex items-center gap-2 text-lg font-semibold text-slate-300 mb-1">
+                          <Briefcase size={18} className="text-cyan-500" />
                           <span>{exp.company}</span>
                         </div>
-                        <p className="text-slate-600 text-sm">{exp.location}</p>
+                        <p className="text-slate-400 text-sm">{exp.location}</p>
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 text-slate-600 mt-4 md:mt-0 px-4 py-2 bg-slate-100 rounded-lg text-sm font-medium">
-                    <Calendar size={16} className="text-slate-700" />
+                  <div className="flex items-center gap-2 text-slate-300 mt-4 md:mt-0 px-4 py-2 glass-dark rounded-xl text-sm font-medium border border-cyan-500/20">
+                    <Calendar size={16} className="text-cyan-500" />
                     <span className="whitespace-nowrap">{exp.period}</span>
                   </div>
                 </div>
 
-                <div className="ml-4 border-l-2 border-slate-200 pl-6 space-y-3 mt-6">
+                <div className="ml-4 border-l-2 border-cyan-500/30 pl-6 space-y-3 mt-6">
                   {exp.highlights.map((highlight, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <ArrowRight size={16} className="text-cyan-500 flex-shrink-0 mt-1" />
-                      <span className="text-slate-700 text-sm leading-relaxed">{highlight}</span>
+                    <div key={idx} className="flex items-start gap-3 group/item">
+                      <ArrowRight size={16} className="text-cyan-500 flex-shrink-0 mt-1 group-hover/item:translate-x-1 transition-transform" />
+                      <span className="text-slate-300 text-sm leading-relaxed">{highlight}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           ))}
         </div>
 
-        <div className="mt-12 group relative overflow-hidden bg-white p-8 rounded-lg border border-slate-200 hover:border-slate-400 transition-all duration-300 hover:shadow-lg">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="mt-12 group relative overflow-hidden glass p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-500/50 transition-all duration-500 hover:glow">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
           <div className="relative">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-1 h-10 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full" />
-              <h3 className="text-2xl font-bold text-slate-900">
+              <div className="w-1 h-10 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full shadow-lg shadow-blue-500/50" />
+              <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
                 Leadership & Involvement
               </h3>
             </div>
 
-            <div className="ml-4 border-l-2 border-slate-200 pl-6">
-              <h4 className="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-cyan-500" />
+            <div className="ml-4 border-l-2 border-cyan-500/30 pl-6">
+              <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse shadow-lg shadow-cyan-500/50" />
                 Engineering Academy Leader
               </h4>
-              <p className="text-slate-600 text-sm font-medium mb-1">
+              <p className="text-slate-300 text-sm font-medium mb-1">
                 Brown Forman/GE Appliances Programs | Louisville, KY
               </p>
-              <p className="text-slate-500 text-xs mb-4">July 2024</p>
+              <p className="text-slate-400 text-xs mb-4">July 2024</p>
 
               <div className="space-y-2">
-                <div className="flex items-start gap-3">
-                  <ArrowRight size={14} className="text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="text-slate-700 text-sm">
+                <div className="flex items-start gap-3 group/item">
+                  <ArrowRight size={14} className="text-blue-500 flex-shrink-0 mt-1 group-hover/item:translate-x-1 transition-transform" />
+                  <span className="text-slate-300 text-sm">
                     Organized a rigorous two-week summer program, preparing 48 students for college calculus & engaging in industry tours
                   </span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <ArrowRight size={14} className="text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="text-slate-700 text-sm">
+                <div className="flex items-start gap-3 group/item">
+                  <ArrowRight size={14} className="text-blue-500 flex-shrink-0 mt-1 group-hover/item:translate-x-1 transition-transform" />
+                  <span className="text-slate-300 text-sm">
                     Advised first-year students in group and one-to-eight settings to create an academic schedule and provide involvement resources
                   </span>
                 </div>
@@ -161,7 +170,7 @@ function Experience() {
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
       </div>
     </section>
