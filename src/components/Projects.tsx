@@ -28,7 +28,7 @@ function Projects() {
       subtitle: 'Louisville River City Rocketry: Payload Member',
       icon: <Rocket size={24} />,
       period: '2023 – 2024',
-      logo: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Ccircle cx=%22100%22 cy=%22100%22 r=%2295%22 fill=%22%230b3d91%22 stroke=%22%23ffffff%22 stroke-width=%222%22/%3E%3Ctext x=%22100%22 y=%22115%22 font-size=%2270%22 font-weight=%22bold%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-family=%22sans-serif%22%3ENASA%3C/text%3E%3C/svg%3E',
+      logo: 'image copy copy copy.png',
       highlights: [
         'Modeled payload capsule system in SolidWorks CAD for flight durability and mass constraints',
         'Compiled MATLAB data into Excel and automated combustion chamber pressure & temperature analysis scripts'
