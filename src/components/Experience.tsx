@@ -29,7 +29,7 @@ function Experience() {
       role: 'Student Intern',
       location: 'Louisville, KY',
       period: 'August 2024 – August 2025',
-      logo: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect x=%2220%22 y=%2260%22 width=%2260%22 height=%2280%22 fill=%22%23ff7a00%22 rx=%225%22/%3E%3Crect x=%22120%22 y=%2260%22 width=%2260%22 height=%2220%22 fill=%22%23ff7a00%22 rx=%225%22/%3E%3Crect x=%22120%22 y=%22100%22 width=%2260%22 height=%2220%22 fill=%22%23ff7a00%22 rx=%225%22/%3E%3C/svg%3E',
+      logo: 'image copy copy.png',
       highlights: [
         'Collaborated with cross-functional teams to prototype next-gen smart appliance innovations',
         'Operated and programmed shop floor machinery to produce components for appliance manufacturing',
