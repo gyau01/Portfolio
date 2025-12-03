@@ -57,7 +57,7 @@ function About() {
             </p>
             <div className="flex justify-between items-center pt-4 border-t border-cyan-500/20">
               <span className="text-cyan-400 font-bold">GPA: 3.5/4.0</span>
-              <span className="text-slate-400 text-sm">Expected May 2027</span>
+              <span className="text-slate-400 text-sm"> Expected May 2027</span>
             </div>
           </div>
 
