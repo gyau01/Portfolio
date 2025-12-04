@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Phone, Sparkles, Send } from 'lucide-react';
+import { Mail, Linkedin, Phone, Send } from 'lucide-react';
 
 function Contact() {
   return (
@@ -9,10 +9,8 @@ function Contact() {
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <div className="mb-12">
-          <h2 className="text-5xl font-bold text-white mb-4 inline-flex items-center gap-3">
-            <Sparkles className="text-cyan-400" size={32} />
+          <h2 className="text-5xl font-bold text-white mb-4">
             Get In Touch
-            <Sparkles className="text-cyan-400" size={32} />
           </h2>
           <div className="h-1 w-32 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full mb-8" />
         </div>

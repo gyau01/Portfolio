@@ -1,4 +1,4 @@
-import { Code, Cpu, Wrench, Sparkles } from 'lucide-react';
+import { Code, Cpu, Wrench } from 'lucide-react';
 
 interface SkillCategory {
   title: string;
@@ -63,10 +63,8 @@ function Skills() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-white mb-4 inline-flex items-center gap-3">
-            <Sparkles className="text-cyan-400" size={32} />
+          <h2 className="text-5xl font-bold text-white mb-4">
             Skills & Expertise
-            <Sparkles className="text-cyan-400" size={32} />
           </h2>
           <div className="h-1 w-32 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
         </div>
