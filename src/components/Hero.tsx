@@ -32,10 +32,6 @@ function Hero() {
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-20 animate-pulse-slow" style={{ animationDelay: '2s' }} />
 
       <div className="max-w-5xl mx-auto text-center z-10 animate-slide-up">
-        <div className="mb-6 flex items-center justify-center">
-          <span className="text-cyan-400 text-sm font-semibold tracking-widest uppercase">Electrical Engineer</span>
-        </div>
-
         <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-200 to-blue-400 text-glow">
             Gau Ding Yu
