@@ -4,11 +4,15 @@
 
 @layer base {
   body {
-    @apply bg-slate-950;
+    @apply bg-black;
   }
 
   * {
     @apply scroll-smooth;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 

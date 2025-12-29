@@ -1,45 +1,44 @@
 function Skills() {
-  const skills = {
+  const skillCategories = {
     'Technical Skills': [
-      'Embedded Systems',
-      'Analog/Digital Processing',
-      'Circuit Analysis',
-      'PCB Design',
-      'Control Systems',
-      'Instrumentation',
+      { name: 'Embedded Systems', color: 'bg-purple-600' },
+      { name: 'Analog/Digital Processing', color: 'bg-blue-600' },
+      { name: 'PCB Design', color: 'bg-yellow-600' },
+      { name: 'Control Systems', color: 'bg-pink-600' },
+      { name: 'Instrumentation', color: 'bg-green-600' },
     ],
     'Programming Languages': [
-      'C/C++',
-      'Python',
-      'Java',
-      'Assembly',
-      'MATLAB',
+      { name: 'C/C++', color: 'bg-purple-600' },
+      { name: 'Python', color: 'bg-yellow-600' },
+      { name: 'Java', color: 'bg-red-600' },
+      { name: 'Assembly', color: 'bg-blue-600' },
+      { name: 'MATLAB', color: 'bg-orange-600' },
     ],
-    'Tools and Software': [
-      'SolidWorks (CAD/FEA)',
-      'Altium',
-      'KiCad',
-      'LabVIEW',
-      'LT Spice',
-      'UniFlash',
-      'Oscilloscope',
+    'Tools and Frameworks': [
+      { name: 'SolidWorks', color: 'bg-yellow-600' },
+      { name: 'Altium', color: 'bg-green-600' },
+      { name: 'KiCad', color: 'bg-blue-600' },
+      { name: 'LabVIEW', color: 'bg-red-600' },
     ],
   };
 
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-950">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-12">Skills</h2>
+    <section id="skills" className="py-20 px-4 bg-black">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">Skills</h2>
 
         <div className="space-y-8">
-          {Object.entries(skills).map(([category, items]) => (
-            <div key={category}>
-              <h3 className="text-xl font-semibold text-cyan-400 mb-4">{category}:</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                {items.map((skill) => (
-                  <div key={skill} className="text-slate-300">
-                    {skill}
-                  </div>
+          {Object.entries(skillCategories).map(([category, skills]) => (
+            <div key={category} className="text-center">
+              <h3 className="text-xl font-semibold text-white mb-4">{category}</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                {skills.map((skill) => (
+                  <span
+                    key={skill.name}
+                    className={`${skill.color} text-white px-4 py-2 rounded text-sm font-mono`}
+                  >
+                    {skill.name}
+                  </span>
                 ))}
               </div>
             </div>
