@@ -65,7 +65,7 @@ const experiences = [
     logo: '/uofl_logo.jpg',
     details: 'Detailed information about the Undergraduate Research Assistant position at University of Louisville. This role involved research in DC motor dynamics, control systems, and data acquisition.',
     skills: ['DC Motor Control', 'PI Control Loops', 'Workbench Software', 'Data Acquisition', 'Signal Analysis', 'Control System Design'],
-    portfolioLink: 'https://drive.google.com/file/d/1kN1lTl3jwXHwq-AwyMxeye45CphM9Ro9/view?usp=sharing',
+    portfolioLink: 'https://drive.google.com/file/d/1h66P-13J4S-2xR1gpIaTlMF1xdbtWDQg/view?usp=sharing',
     projectLink: 'https://drive.google.com/file/d/1FpGiq-qrGuYDq0ui6BVK6xmatl_-oCPN/view?usp=sharing',
   },
   {

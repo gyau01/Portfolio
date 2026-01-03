@@ -29,7 +29,7 @@ function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a
-            href="https://drive.google.com/file/d/1As5Fv65hXVoQMhW1nUJbaK-mFHYEqRpH/view?usp=sharing"
+            href="https://drive.google.com/file/d/1dqpMYr-x9hKR61s9oYgE5eO5FTICOESA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
@@ -44,7 +44,7 @@ function Hero() {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1kN1lTl3jwXHwq-AwyMxeye45CphM9Ro9/view?usp=sharing"
+            href="https://drive.google.com/file/d/1h66P-13J4S-2xR1gpIaTlMF1xdbtWDQg/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)]"

@@ -17,7 +17,7 @@ const projects = [
       'Manufacturing: Utilized laser cutting, 3D printing, soldering, and welding',
     ],
     skills: ['CAD Design (OnShape)', 'KiCAD', 'QMK Programming', 'Laser Cutting', '3D Printing', 'Soldering', 'Welding', 'Microcontroller'],
-    portfolioLink: 'https://drive.google.com/file/d/1kN1lTl3jwXHwq-AwyMxeye45CphM9Ro9/view?usp=sharing',
+    portfolioLink: 'https://drive.google.com/file/d/1h66P-13J4S-2xR1gpIaTlMF1xdbtWDQg/view?usp=sharing',
   },
   {
     id: 'entrepreneurship',
@@ -46,7 +46,7 @@ const projects = [
       'Control Systems: Programmed Arduino-based control algorithms',
     ],
     skills: ['CAD Design (SolidWorks)', 'Arduino', 'Electronics', 'Circuit Design', 'Robotics', 'Control Systems', 'Motor Driver Control', 'Team Collaboration', 'Presentation'],
-    portfolioLink: 'https://drive.google.com/file/d/1kN1lTl3jwXHwq-AwyMxeye45CphM9Ro9/view?usp=sharing',
+    portfolioLink: 'https://drive.google.com/file/d/1h66P-13J4S-2xR1gpIaTlMF1xdbtWDQg/view?usp=sharing',
     projectLink: 'https://drive.google.com/file/d/1c69I_QknwQa9OhF9ULb608r46LOqbHtJ/view?usp=sharing',
   },
   {
